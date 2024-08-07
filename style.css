@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background: url(./moon.jpg);
+  background-size: cover;
+  animation: scaling 60s linear infinite;
+}
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ol {
+    list-style-type: none;
+    display: flex;
+}
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+.Moon {
+    position: absolute;
+    animation: movement 60s linear infinite;
+}
+@keyframes movement {
+    0% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 50rem;
+        top: 20%;
+        right: -10%;
+        transform: rotate(180deg);
+    }
+    100% {
+        width: 20rem;
+        top: 10%;
+        right: 30%;
+        transform: rotate(360deg);
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;color: rgb(6, 237, 245);
+}
+header>a {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header ol li {
+    font-weight: 600;
+    padding: 0 20px;
+    opacity: 0.6;
+}
+
+header ol li:first-child {
+    opacity: 1;
+}
+.text{
+ color: rgb(244, 244, 241);
+ width: 600px;
+}
+main{
+    display: flex;
+    color: white;
+    margin-top: 80px;
+    opacity: 0.7;
+    width: 900px;
+
+}
+main h5{
+    color: aqua;
+}
