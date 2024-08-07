@@ -11,7 +11,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-  background: url(./moon.jpg);
+  background: url(./Moon Background.jpg);
   background-size: cover;
   animation: scaling 60s linear infinite;
 }
